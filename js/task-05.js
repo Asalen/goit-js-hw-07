@@ -5,5 +5,5 @@ let outputText = document.querySelector('#name-output');
 
 function inputChange(event) {
     inputText = event.currentTarget.value;
-    inputText !== ' ' ? (outputText.innerText = inputText) : 'незнакомец';
+    outputText.innerText = inputText ? inputText : "незнакомец";
 }
