@@ -1,9 +1,9 @@
-let input = document.querySelector('#name-input');
-input.addEventListener('input', inputChange);
+let inputText = document.querySelector('#name-input');
+inputText.addEventListener('input', inputChange);
 
-let output = document.querySelector('#name-output');
+let outputText = document.querySelector('#name-output');
 
 function inputChange(event) {
-    input = event.currentTarget.value;
-    input !== ' ' ? (output.innerText = input) : 'незнакомец';
+    inputText = event.currentTarget.value;
+    inputText !== ' ' ? (outputText.innerText = inputText) : 'незнакомец';
 }
